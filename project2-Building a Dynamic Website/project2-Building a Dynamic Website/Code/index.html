@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Dynamic website ">
+    <meta property="og:locale" content="en_US">
+    <meta name="description"
+        content="Validation form, Todo list, Calculator ,  Full-stack web developer, Back-end Developer, Front-end Developer">
+    <meta property="og:description"
+        content="Validation form, Todo list, Calculator , Full-stack web developer,Back-end Developer, Front-end Developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Ubuntu, linux, Web Developer,">
+    <meta name="author" content="Mohammad & Lara & Maria ">
+    <title>Home </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c20b61c724.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body id="fontstyle">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light nav1">
+    <a class="navbar-brand" href="#"><img src="images/logo3.png" width="50px" height="50px" id="logo"></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     <div class="navbar-nav mx-auto des ">
+       <a class="nav-item nav-link active" href="index.html"style="color:#eadfce;">Home &nbsp; &nbsp; 
+
+        <span class="sr-only">(current)</span></a>
+       <a class="nav-item nav-link" href="todo.html" style="color:#eadfce;">To do list &nbsp; &nbsp;
+
+    </a>
+       <a class="nav-item nav-link" href="calculater.html"style="color:#eadfce;">Calculator &nbsp; &nbsp;</a>
+       <div class=" picker ">
+        <input id="color" type="color">
+       <button type="button" onclick="myFunction()" id="picker2"> background color </button>
+         <select onchange="changeFont (this);" class="picker">
+           <option selected="selected">Font Family &nbsp; &nbsp;</option>
+           <option value="Times New Roman">Times New Roman</option>
+           <option value="cursive">Cursive Hand</option>
+           <option value="Cormorant SC">Cormorant SC</option>
+         </select>
+         <select onchange="changeFontsize (this);" class="picker3">
+           <option selected="selected"  >Size Family &nbsp; &nbsp; &nbsp; &nbsp; </option>
+           <option value="24px ">24px</option>
+           <option value="30px">30px</option>
+           <option value="36px">36px</option>
+         </select>
+        </div></div>
+     
+   </div>
+ </nav>
+  
+    <div class="all">
+        <div class="image col-8">
+        </div>
+        <div class="container col-4 ">
+
+            
+            <!--form starts -->
+
+
+            <form id="formBox" action="">
+                <div id="newfontsize">
+                    <h1> Create a new account </h1>
+                    <p id="para"> It's quick and easy.</p>
+                </div>
+                <div class="form-group">
+                    <!-- Username -->
+                    <input class="form-control" type="text" id="uname" name="uname" placeholder="Username"
+                        onblur="allLetter()">
+                    <div id="erorr"></div> <br>
+                    <!-- email -->
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" onblur="Email()">
+                    <div id="erorr2"></div>
+                    <br>
+                    <!-- password -->
+                    <input class="form-control" type="password" id="password" name="password" placeholder="password"
+                        onblur="Password()">
+                    <div id="erorr3"></div>
+
+                </div>
+                <!-- Date of birth -->
+                <div class="form-row">
+                    <div class="form-group col">
+                        <small for="date"> Date of birth </small><br>
+                        <input class="form-control" type="date" id="date" name="date" max="2002-12-31" min="1950-12-31">
+                    </div>
+                    <div class="form-group col">
+                        <small for="number"> Phone Number </small>
+                        <input class="form-control" type="text" id="number" name="number" placeholder="077-7777-777"
+                            onblur="Number()">
+                        <div id="erorr4"></div>
+                    </div>
+                </div>
+
+
+            
+                <!-- terms of policy -->
+                <div class="form-row">
+                    <div class="form-group col">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="checkbox" onclick="chBox()">
+                            <label class="custom-control-label" for="checkbox"> Accept terms of policy</label>
+                        </div>
+                    </div>
+                    <!-- Read more -->
+                    <div class="form-group col ">
+                        <div>
+                            <a href="#"><small>Read more.</small></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- submitt -->
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input class="form-control btn- btn-block bcolor" type="button" id="lbutton" name="button"
+                            value="Sign up" onclick="lStorage()" disabled>
+                    </div>
+                    <!-- one time submit -->
+                    <div class="form-group col">
+                        <input class="form-control btn- btn-block bcolor" type="button" id="sbutton" name="button"
+                            value="Sign up  for one time " onclick="sStorage()" disabled>
+                    </div>
+                </div>
+                <!-- clear  -->
+                <div form-group>
+                    <input class="form-control btn- btn-block bccolor" type="button" id="cbutton" name="button"
+                        value="Clear data" onclick="cStorage()">
+                    <br>
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- form start end -->
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+        <!-- Footer Elements -->
+        <div class="container">
+            <!-- Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 py-5 ">
+                    <div class="mb-5 flex-center">
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" target="_blank" class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a href="#" target="_blank" class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="#" target="_blank" class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: bisque;">© 2020 Copyright:
+            <a href="#" id="link"> Any.do-org.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

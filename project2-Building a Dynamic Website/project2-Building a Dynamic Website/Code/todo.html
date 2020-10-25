@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Dynamic website ">
+  <meta property="og:locale" content="en_US">
+  <meta name="description"
+    content="Validation form, Todo list, Calculator ,  Full-stack web developer, Back-end Developer, Front-end Developer">
+  <meta property="og:description"
+    content="Validation form, Todo list, Calculator , Full-stack web developer,Back-end Developer, Front-end Developer">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Ubuntu, linux, Web Developer,">
+  <meta name="author" content="Mohammad & Lara & Maria ">
+  <title>Home </title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/toDo2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/c20b61c724.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/WOW-master/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body id="fontstyle">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <a class="navbar-brand" href="#"><img src="images/logo3.png" width="50px" height="50px" id="logo"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav mx-auto des ">
+           <a class="nav-item nav-link active" href="index.html"style="color:#eadfce;">Home &nbsp; &nbsp; 
+
+            <span class="sr-only">(current)</span></a>
+           <a class="nav-item nav-link" href="todo.html" style="color:#eadfce;">To do list &nbsp; &nbsp;
+
+        </a>
+           <a class="nav-item nav-link" href="calculater.html"style="color:#eadfce;">Calculator &nbsp; &nbsp;</a>
+           <div class=" picker ">
+            <input id="color" type="color">
+           <button type="button" onclick="myFunction()" id="picker2"> background color </button>
+             <select onchange="changeFont (this);" class="picker">
+               <option selected="selected">Font Family &nbsp; &nbsp;</option>
+               <option value="Times New Roman">Times New Roman</option>
+               <option value="cursive">Cursive Hand</option>
+               <option value="Cormorant SC">Cormorant SC</option>
+             </select>
+             <select onchange="changeFontsize (this);" class="picker3">
+               <option selected="selected"  >Size Family &nbsp; &nbsp; &nbsp; &nbsp; </option>
+               <option value="24px" ">24px</option>
+               <option value="30px">30px</option>
+               <option value="36px">36px</option>
+             </select>
+            </div></div>
+         
+       </div>
+     </nav>
+
+
+
+<div id="newfontsize">
+  <div class="x1">
+    <h1>To Do</h1>
+
+    <form class="todo-form">
+      <input type="text" class="todo-input" placeholder="Add a Todo...">
+      <button type="submit" class="add-button">Add</button>
+    </form>
+
+    <ul class="todo-items">
+      <!-- dummy item -->
+      <li class="item" data-key="1594003133171">
+        <input class="checkbox" type="checkbox">
+        Go to Gym
+        <button class="delete-button">X</button>
+      </li>
+    </ul>
+    <!-- <button class="clear">Clear All</button> -->
+  </div>
+</div>
+  
+  
+  <script src="js/todo.js"></script>
+  <!-- <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script> -->
+
+
+
+
+  <!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div href="#" class="col-md-12 py-5 ">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a  href="#" class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a  href="#" class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a href="#" class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <!--Instagram-->
+            <a  href="#" class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+    
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color: bisque;">© 2020 Copyright:
+      <a href="#" id="link"> TO Do.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

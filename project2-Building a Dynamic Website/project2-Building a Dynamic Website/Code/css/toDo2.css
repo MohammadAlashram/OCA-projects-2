@@ -1,0 +1,229 @@
+html {
+    font-size: 90.5%;
+    box-sizing: border-box;
+  }
+
+
+
+common styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center; */
+  /* background: linear-gradient(#F00000, #DC281E); */
+  font-family: sans-serif;
+  background-image: url(../images/bg.jpeg);
+  background-size: cover;
+}
+#color {
+    height: 2em;
+}
+
+#newfontsize {
+ margin: 2rem;
+}
+
+#newfontsize h1{
+font-size: 3rem;
+color: #4e7759;
+
+}
+
+#newfontcolor {
+    height: 2em;
+}
+
+.colorpick-eyedropper-input-trigger {
+    display: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #73E831;
+}
+.des{
+    /* color: #eadfce ; */
+    font-size: 1.5rem;
+    font-family: 'Playfair Display SC', serif;
+    
+    /* word-spacing: 5rem; */
+}
+.des a:hover{
+    color:#1d3c26 !important ;
+    background-color:#eadfce;
+}
+.bcolor{
+    background-color: #578f53;
+    color: white;
+}
+.bccolor{
+    background-color:#1d3c26;
+    color: white;
+
+}
+
+.nav1{
+background-color: #68775e;
+}
+
+footer{
+    background-color: #68775e;
+    margin-bottom: 0%;
+    padding-bottom:0 ;
+}
+.fb-ic,.tw-ic,.gplus-ic,.li-i,.ins-ic,.pin-ic{
+    color:rgb(255, 252, 204) !important;
+    margin: 5rem;
+    padding-top: 3rem;
+    padding-right:3rem ;
+
+}
+#link{
+    color: white;
+}
+/* #link :hover{
+color: ;
+} */
+.picker{
+display: flex;
+flex-direction: row;
+
+
+}
+#picker2{
+    background-color:#68775e;
+    color:#eadfce;
+    border: 1px  #68775e  solid ;
+    text-align: center;
+
+
+}
+.picker3,.picker{
+    background-color:#68775e;
+    color:#eadfce;
+    text-align: center;
+    border: none;
+    border: 1px #1d3c26 solid;
+   
+}
+
+#picker2:hover{
+    background-color: #eadfce;
+    color: #1d3c26;
+}
+
+ul {
+  list-style-type: none; /* get rid of bullet points on side of list items */
+}
+
+/* common style ends */
+
+/* container */
+.x1 {
+  min-width: 600px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ padding-bottom: 300px;
+}
+
+h1 {
+  color:#68775e ;
+  font-size: 6rem;
+  font-family: 'Flavors', cursive;
+  padding-top: 20px;
+  
+}
+
+/* todo-form */
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-input {
+  width: 600px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+
+}
+
+.add-button {
+  background-color:#68775e;
+  color:  #eadfce;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+/* todo-form style ends */
+
+/* todo-items */
+.todo-items {
+  min-width: 60rem;
+}
+
+/* each li with class="item" */
+.item {
+  background-color: #4e7759;
+  color: #eadfce;
+  padding: 10px;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* item style end */
+
+.checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #eadfce;
+}
+
+.delete-button {
+  float: right;
+  background-color:  #eadfce;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 3px 5px;
+  margin-left: 10px;
+  margin-top: 6px;
+  font-size: 1.1rem;
+  font-weight: 550;
+  width: 30px;
+  height: 30px;
+}
+
+/* applied when the todo item is checked */
+.checked { 
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+/* todo-items style ends */
+
+/* container style ends*Thank you for your business! We look forward to working with you again.

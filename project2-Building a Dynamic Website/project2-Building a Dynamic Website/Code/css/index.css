@@ -1,0 +1,123 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    }
+    
+    
+    #color {
+        height: 2em;
+    }
+    
+    #newfontsize {
+     margin: 2rem;
+    }
+    
+    #newfontsize h1{
+    font-size: 3rem;
+    color: #4e7759;
+    
+    }
+    
+    #newfontcolor {
+        height: 2em;
+    }
+    
+    .colorpick-eyedropper-input-trigger {
+        display: none;
+    }
+    
+    .image {
+        width: 100%;
+        height: auto;
+        background: url(../images/gg.jpeg) center center/cover;
+        /* background-size: cover; */
+        opacity: 0.9 ;
+        /* margin-top: 2em; */
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        height: auto;
+        
+    }
+    
+    .all {
+    
+        display: flex;
+        flex-direction: row;
+    }
+    /* #neche {
+        font-size : 5rem ;  
+    } */
+    
+    .des{
+        color: #1d3c26;
+        font-size: 1.5rem;
+        font-family: 'Playfair Display SC', serif;
+        
+        /* word-spacing: 5rem; */
+    }
+    .des a:hover{
+        color:#1d3c26 !important ;
+        background-color:#eadfce;
+    }
+    .bcolor{
+        background-color: #578f53;
+        color: white;
+    }
+    .bccolor{
+        background-color:#1d3c26;
+        color: white;
+    
+    }
+    
+    .nav1{
+    background-color: #68775e;
+    }
+    
+    footer{
+        background-color: #68775e;
+    }
+    .fb-ic,.tw-ic,.gplus-ic,.li-i,.ins-ic,.pin-ic{
+        color:rgb(255, 252, 204) !important;
+        margin: 5rem;
+        padding-top: 3rem;
+    
+    }
+    #link{
+        color: white;
+    }
+    /* #link :hover{
+    color: ;
+    } */
+    .picker{
+    display: flex;
+    flex-direction: row;
+    
+    
+    }
+    #picker2{
+        background-color:#68775e;
+        color:#eadfce;
+        border: 1px  #68775e  solid ;
+        text-align: center;
+    
+    
+    
+    }
+    .picker3,.picker{
+        background-color:#68775e;
+        color:#eadfce;
+        text-align: center;
+        border: none;
+        border: 1px #1d3c26 solid;
+       
+    }
+    
+    #picker2:hover{
+        background-color: #eadfce;
+        color: #1d3c26;
+    }
+    
+    
+    
